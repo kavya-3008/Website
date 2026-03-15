@@ -25,6 +25,24 @@ body {
   line-height: 1.6;
 }
 
+.geisel-confetti-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.geisel-confetti-piece {
+  position: absolute;
+  pointer-events: none;
+  transition: left 1.6s ease-out, top 1.6s ease-out, transform 1.6s ease-out, opacity 1.6s ease-out;
+  transform-origin: center center;
+}
+
 a {
   color: inherit;
   text-underline-offset: 0.2em;
@@ -113,8 +131,10 @@ h2 {
 
 .profile-image {
   width: min(320px, 72vw);
-  height: auto;
-  border-radius: 999px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center 15%;
+  border-radius: 50%;
   border: 1px solid var(--line);
   background: var(--card);
   padding: 0.35rem;
