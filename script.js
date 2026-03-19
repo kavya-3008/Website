@@ -66,8 +66,20 @@ function spawnGeiselShower() {
   }
 }
 
-document.body.addEventListener('click', () => {
-  spawnGeiselShower();
+function isBackgroundClick(target) {
+  if (!(target instanceof Element)) {
+    return false;
+  }
+
+  const nonBackgroundSelector =
+    'a, button, input, textarea, select, label, .project-card, .timeline-card, .skills-card, .tag, .nav-list, .hero-links, h1, h2, h3, p, li';
+  return !target.closest(nonBackgroundSelector);
+}
+
+document.body.addEventListener('click', (e) => {
+  if (isBackgroundClick(e.target)) {
+    spawnGeiselShower();
+  }
 });
 
 const profileImage = document.querySelector('.profile-image');
