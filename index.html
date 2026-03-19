@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kavya Shah — Portfolio</title>
+    <title>Kavya Shah — AI/ML Portfolio</title>
     <meta
       name="description"
-      content="Kavya Shah portfolio: AI consultant, developer, and UC San Diego student building intelligent systems."
+      content="Kavya Shah: Mathematics and Computer Science student focused on AI systems, machine learning, and data platforms."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -16,76 +16,203 @@
       <nav aria-label="Main navigation">
         <ul class="nav-list">
           <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="experience.html">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="profile-hero">
-        <img
-          class="profile-image"
-          src="assets/IMG_4637%202.JPG"
-          alt="Portrait of Kavya Shah"
-          width="320"
-          height="320"
-        />
-        <h1>Hi, I’m Kavya Shah.</h1>
+      <section class="hero section-block reveal" id="home">
+        <div class="hero-image-wrap">
+          <span class="hero-glow" aria-hidden="true"></span>
+          <img
+            class="profile-image"
+            src="assets/IMG_4637%202.JPG"
+            alt="Portrait of Kavya Shah"
+            width="320"
+            height="320"
+          />
+        </div>
+        <p class="eyebrow">Mathematics + Computer Science @ UCSD</p>
+        <h1>Kavya Shah</h1>
+        <p class="hero-identity">AI / ML Engineer in Training</p>
         <p class="short-bio">
-          I’m a UC San Diego student in Mathematics + Computer Science (Data Science minor),
-          building practical AI systems in healthcare, analytics, and developer tools.
+          I design practical AI systems across healthcare, data workflows, and developer tooling,
+          with a focus on reliable ML outcomes and clean system architecture.
         </p>
         <div class="hero-links" aria-label="Quick navigation">
-          <a class="button" href="work.html">View My Work</a>
-          <a class="ghost-button" href="experience.html">See Experience</a>
-          <a class="ghost-button" href="contact.html">Contact Me</a>
+          <a class="button" href="#projects">View Projects</a>
+          <a class="ghost-button" href="experience.html">Resume</a>
+          <a class="ghost-button" href="https://github.com/" target="_blank" rel="noreferrer"
+            >GitHub</a
+          >
         </div>
       </section>
 
-      <section class="section">
+      <section class="section-block reveal" id="projects">
         <div class="section-head">
-          <h2>Explore</h2>
-          <p>Everything is live on this main branch build.</p>
+          <p class="eyebrow">Featured Projects</p>
+          <h2>Recent Builds</h2>
+          <p>Selected projects spanning ML modeling, AI systems, and data engineering.</p>
         </div>
-        <div class="link-grid">
-          <a class="link-card" href="work.html">
-            <h3>Work</h3>
-            <p>Project outcomes, tools, and technical highlights.</p>
-          </a>
-          <a class="link-card" href="experience.html">
-            <h3>Experience</h3>
-            <p>Education, roles, and core skills from my resume.</p>
-          </a>
-          <a class="link-card" href="contact.html">
-            <h3>Contact</h3>
-            <p>Email, LinkedIn, and ways to collaborate.</p>
-          </a>
+        <div class="project-grid">
+          <article class="project-card interactive">
+            <div class="project-thumb thumb-gradient-1" aria-hidden="true"></div>
+            <h3>Travelog AI Planner</h3>
+            <p>
+              Built AI-assisted travel planning with preference learning and production-ready API
+              deployment pipelines.
+            </p>
+            <div class="tag-row">
+              <span class="tag">React</span>
+              <span class="tag">Flask</span>
+              <span class="tag">AWS</span>
+              <span class="tag">MongoDB</span>
+            </div>
+          </article>
+
+          <article class="project-card interactive">
+            <div class="project-thumb thumb-gradient-2" aria-hidden="true"></div>
+            <h3>Credit Default Risk Modeling</h3>
+            <p>
+              Created an agentic ML workflow for feature engineering and explainability, improving
+              AUC by 12%.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Python</span>
+              <span class="tag">scikit-learn</span>
+              <span class="tag">SHAP</span>
+              <span class="tag">LangChain</span>
+            </div>
+          </article>
+
+          <article class="project-card interactive">
+            <div class="project-thumb thumb-gradient-3" aria-hidden="true"></div>
+            <h3>AI Code Review Assistant</h3>
+            <p>
+              Designed a conversational code-review system with long-running memory and actionable
+              feedback loops.
+            </p>
+            <div class="tag-row">
+              <span class="tag">LangGraph</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Flask</span>
+              <span class="tag">Redis</span>
+            </div>
+          </article>
+
+          <article class="project-card interactive">
+            <div class="project-thumb thumb-gradient-4" aria-hidden="true"></div>
+            <h3>Biomedical Multimodal ML</h3>
+            <p>
+              Built reproducible pipelines for scRNA-seq and ATAC-seq analysis to surface
+              potential tumor-specific biomarkers.
+            </p>
+            <div class="tag-row">
+              <span class="tag">PyTorch</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">RAG</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section-block reveal" id="experience">
         <div class="section-head">
-          <h2>Quick Highlights</h2>
+          <p class="eyebrow">Experience</p>
+          <h2>Work and Research</h2>
         </div>
-        <div class="stats-grid">
-          <article>
-            <h3>3.89 GPA</h3>
-            <p>UC San Diego, BS in Mathematics & Computer Science (Expected 2027).</p>
+        <div class="timeline-grid">
+          <article class="timeline-card interactive">
+            <p class="timeline-icon" aria-hidden="true">🧠</p>
+            <h3>AI Consultant · Pear.care</h3>
+            <p class="meta">Remote · 2025–Present</p>
+            <ul>
+              <li>Built deep-agent workflows for clinical routing and operations.</li>
+              <li>Integrated secure MCP tools for auditable research access.</li>
+              <li>Shipped AWS-backed RAG pipelines with scheduling safeguards.</li>
+            </ul>
           </article>
-          <article>
-            <h3>AI + Healthcare</h3>
-            <p>
-              Built deep-agent workflows, semantic search pipelines, and multimodal biomedical ML
-              systems.
-            </p>
+
+          <article class="timeline-card interactive">
+            <p class="timeline-icon" aria-hidden="true">🗄️</p>
+            <h3>Database Engineer · SDSC</h3>
+            <p class="meta">San Diego · 2025–Present</p>
+            <ul>
+              <li>Migrated congenital heart datasets from DynamoDB using Boto3.</li>
+              <li>Standardized schemas and moved data into PostgreSQL.</li>
+              <li>Containerized data pipelines for reproducible analytics.</li>
+            </ul>
           </article>
-          <article>
-            <h3>End-to-End Shipping</h3>
-            <p>
-              Comfortable with React, Flask, AWS pipelines, PostgreSQL, and model deployment.
-            </p>
+
+          <article class="timeline-card interactive">
+            <p class="timeline-icon" aria-hidden="true">🧬</p>
+            <h3>Research Assistant · UC San Diego Health</h3>
+            <p class="meta">San Diego · 2025–Present</p>
+            <ul>
+              <li>Designed ML workflows for single-cell multimodal profiling.</li>
+              <li>Integrated RNA velocity and ATAC-seq into shared pipelines.</li>
+              <li>Identified candidate immune-cell biomarker patterns.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block focus-panel reveal" id="interests">
+        <div class="section-head">
+          <p class="eyebrow">What I Am Working On</p>
+          <h2>Current Focus Areas</h2>
+        </div>
+        <div class="focus-grid">
+          <p>Agentic AI systems for reliable automation</p>
+          <p>RAG architectures for clinical and research workflows</p>
+          <p>End-to-end data pipelines with strong observability</p>
+          <p>Model explainability and interpretable ML decisions</p>
+        </div>
+      </section>
+
+      <section class="section-block reveal" id="skills">
+        <div class="section-head">
+          <p class="eyebrow">Skills</p>
+          <h2>Technical Toolkit</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skills-card">
+            <h3>Languages</h3>
+            <div class="tag-row">
+              <span class="tag">Python</span>
+              <span class="tag">Java</span>
+              <span class="tag">C++</span>
+              <span class="tag">SQL</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">R</span>
+            </div>
+          </article>
+          <article class="skills-card">
+            <h3>ML / AI</h3>
+            <div class="tag-row">
+              <span class="tag">PyTorch</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">scikit-learn</span>
+              <span class="tag">LangChain</span>
+              <span class="tag">LangGraph</span>
+              <span class="tag">OpenCV</span>
+            </div>
+          </article>
+          <article class="skills-card">
+            <h3>Tools & Systems</h3>
+            <div class="tag-row">
+              <span class="tag">Flask</span>
+              <span class="tag">React</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Docker</span>
+              <span class="tag">AWS</span>
+              <span class="tag">Git</span>
+            </div>
           </article>
         </div>
       </section>
