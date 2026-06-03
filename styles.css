@@ -365,6 +365,12 @@ h2 {
   transition: transform 260ms ease;
 }
 
+img.project-thumb {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .thumb-gradient-1 {
   background: linear-gradient(145deg, #eef0ff, #dae0ff 46%, #c5d2ff);
 }
@@ -464,6 +470,29 @@ h2 {
 
 .skills-card .tag-row {
   margin-top: 0.35rem;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.9rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--accent);
+  transition: gap 180ms ease, color 180ms ease;
+}
+
+.project-link::after {
+  content: "↗";
+  font-size: 0.95rem;
+}
+
+.project-link:hover,
+.project-link:focus-visible {
+  gap: 0.55rem;
+  color: #5058eb;
 }
 
 .reveal {
